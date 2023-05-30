@@ -1,0 +1,23 @@
+{
+  "name": "improved-plugin",
+  "version": "1.0.0",
+  "description": "This is the starter project to be available to developers who first create an XD plugin instance in [Adobe I/O Console](https://console.adobe.io/plugins).",
+  "main": "main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -f improved-plugin.xd && zip -r -X . -o ./improved-plugin.xdx * "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateusarbex/improved-plugin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mateusarbex/improved-plugin/issues"
+  },
+  "homepage": "https://github.com/mateusarbex/improved-plugin#readme"
+}
