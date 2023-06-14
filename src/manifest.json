@@ -1,10 +1,39 @@
 {
-  "name": "improved-plugin",
+  "manifestVersion": 5,
+  "name": "Easy-Design-Handoff",
+  "main": "main.js",
   "host": {
     "app": "XD",
     "minVersion": "21.0"
   },
   "id": "1f25036c",
+
+  "entrypoints": [
+    {
+      "type": "command",
+
+      "label": {
+        "default": "Export all artboards"
+      },
+      "id": "exportAllArtboards"
+    },
+    {
+      "type": "command",
+
+      "label": {
+        "default": "Export current artboard"
+      },
+      "id": "exportCurrentArtboard"
+    }
+  ],
+  "requiredPermissions": {
+    "localFileSystem": "fullAccess",
+    "allowCodeGenerationFromStrings": true,
+    "launchProcess": {
+      "schemes": ["http", "https"],
+      "extensions": [".svg", ".png", ".js"]
+    }
+  },
   "icons": [
     {
       "path": "images/icon@1x.png",
@@ -15,33 +44,6 @@
       "path": "images/icon@2x.png",
       "width": 48,
       "height": 48
-    }
-  ],
-  "uiEntryPoints": [
-    {
-      "type": "menu",
-      "label": {
-        "default": "My plugin",
-        "zh": "My plugin"
-      },
-      "menuItems": [
-        {
-          "type": "menu",
-          "label": {
-            "default": "Export current artboard (local)",
-            "zh": "导出当前画板到本地"
-          },
-          "commandId": "exportCurrentArtboard"
-        },
-        {
-          "type": "menu",
-          "label": {
-            "default": "Export all artboards (local)",
-            "zh": "导出所有画板到本地"
-          },
-          "commandId": "exportAllArtboards"
-        }
-      ]
     }
   ],
   "version": "1.0.0"
