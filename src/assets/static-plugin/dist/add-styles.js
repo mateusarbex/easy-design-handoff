@@ -27,7 +27,7 @@ let shouldChange = 0;
 observeDOM(document.body, () => {
   const content = document.querySelector(".content");
   const visible = document.querySelector(".css-68ai3g.visible");
-  const fontWeight = document.querySelector("#fontWeight");
+  const fontWeight = document.querySelector("#font-family");
 
   if (content && visible && !fontWeight) {
     const textToQuery = content.textContent;
@@ -37,7 +37,7 @@ observeDOM(document.body, () => {
           ".css-68ai3g.visible .content > div"
         );
         const spanAttribute = document.createElement("span");
-        spanAttribute.id = "fontWeight";
+        spanAttribute.id = "font-family";
         spanAttribute.className = "hljs-attribute";
         spanAttribute.textContent = "font-family: ";
         const spanValue = document.createElement("span");
