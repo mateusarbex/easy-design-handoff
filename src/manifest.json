@@ -21,6 +21,14 @@
       "type": "command",
 
       "label": {
+        "default": "Link export to github repository"
+      },
+      "id": "linkGithub"
+    },
+    {
+      "type": "command",
+
+      "label": {
         "default": "Export current artboard"
       },
       "id": "exportCurrentArtboard"

@@ -129,7 +129,6 @@ async function createDialog(
       icon = getNearestIcon(manifest, iconSize);
     }
   }
-  console.log(prompt, messages, template);
 
   const dialog = document.createElement("dialog");
   dialog.innerHTML = `
